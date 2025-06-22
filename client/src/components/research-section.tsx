@@ -35,7 +35,7 @@ export default function ResearchSection() {
     <section>
       <Card>
         <CardContent className="p-8">
-          <h2 className="text-3xl font-bold text-academic-dark mb-8">Research</h2>
+          <h2 className="text-3xl font-bold text-academic-dark mb-8">Recent Research</h2>
           <p className="text-academic-slate mb-8">
             My research focuses on advancing multi-robot systems, computer vision, and AI frameworks for autonomous navigation and cooperative exploration.
           </p>

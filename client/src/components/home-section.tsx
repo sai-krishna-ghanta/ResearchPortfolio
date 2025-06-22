@@ -19,7 +19,7 @@ export default function HomeSection() {
                   I have been actively researching on robotics and AI, focusing on multi-robot systems, SLAM, Autonomous systems.
                 </p>
                 <p className="text-lg leading-relaxed mb-4">
-                  I completed my Bachelor of Technology in Data Science and Artificial Intelligence from IIIT Naya Raipur with a GPA of 8.96/10, earning the Dean's List of Academic Excellence Award in 2021 and 2023. I also achieved a 99.5 percentile in the JEE entrance exam with over 10 lakh test takers.
+                  I completed my Bachelor of Technology in Data Science and Artificial Intelligence from IIIT Naya Raipur.
                 </p>
                 <p className="text-lg leading-relaxed">
                   Prior to my PhD, I gained valuable research experience at Samsung R&D Institute, Louisville Automation & Robotics Research Institute, and various academic labs, focusing on deep learning applications in computer vision and robotics.
@@ -59,32 +59,7 @@ export default function HomeSection() {
         </CardContent>
       </Card>
       
-      {/* Work Experience */}
-      <Card className="mb-8">
-        <CardContent className="p-8">
-          <h3 className="text-2xl font-semibold text-academic-dark mb-6">Recent Experience</h3>
-          <div className="space-y-6">
-            <div className="border-l-4 border-academic-blue pl-6">
-              <h4 className="text-lg font-semibold text-academic-dark">Graduate Research Assistant</h4>
-              <p className="text-academic-blue font-medium">HeRoLab Lab, University of Georgia</p>
-              <p className="text-lg text-academic-slate">August 2024 - Present</p>
-              <p className="text-lg mt-2">Working on multi-robot systems, developing SPACE framework and MGPRL for distributed localization</p>
-            </div>
-            <div className="border-l-4 border-slate-300 pl-6">
-              <h4 className="text-lg font-semibold text-academic-dark">Visiting Research Intern</h4>
-              <p className="text-academic-blue font-medium">Louisville Automation & Robotics Research Institute</p>
-              <p className="text-lg text-academic-slate">January 2023 - June 2024</p>
-              <p className="text-lg mt-2">Developed 3DS-SLAM for real-time 3D object detection in Visual SLAM with RGB-D and LiDAR</p>
-            </div>
-            <div className="border-l-4 border-slate-300 pl-6">
-              <h4 className="text-lg font-semibold text-academic-dark">AI Research Intern</h4>
-              <p className="text-academic-blue font-medium">Samsung R&D Institute, India</p>
-              <p className="text-lg text-academic-slate">July 2022 - January 2023</p>
-              <p className="text-lg mt-2">Designed GANs for synthetic data generation for OCR in Bixby Vision</p>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+
 
       {/* Research Interests */}
       <Card>
@@ -112,14 +87,14 @@ export default function HomeSection() {
                 <Brain className="text-academic-blue mt-1 h-5 w-5" />
                 <div>
                   <h4 className="text-lg font-semibold text-academic-dark">Robotics & AI</h4>
-                  <p className="text-lg text-academic-slate">Autonomous navigation, sensor fusion, Gaussian processes</p>
+                  <p className="text-lg text-academic-slate">Autonomous navigation, sensor fusion, Gaussian Processes</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <Languages className="text-academic-blue mt-1 h-5 w-5" />
                 <div>
                   <h4 className="text-lg font-semibold text-academic-dark">Deep Learning</h4>
-                  <p className="text-lg text-academic-slate">GANs, vision transformers, neural architecture search</p>
+                  <p className="text-lg text-academic-slate">DEEP RL, GANs, Vision Transformers</p>
                 </div>
               </div>
             </div>

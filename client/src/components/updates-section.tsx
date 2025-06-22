@@ -5,31 +5,33 @@ export default function UpdatesSection() {
   const updates = [
     {
       title: "Started PhD Journey at University of Georgia",
-      date: "August 2024",
-      category: "Academic Milestone",
-      description: "Officially began my PhD in Artificial Intelligence at the Franklin College of Arts and Sciences, University of Georgia, Athens. Excited to work with Dr. Ramviyas Parasuraman in the HeRoLab on cutting-edge robotics research.",
-      readTime: "2 min read"
+      date: "Aug 2024",
+      category: "Academic"
     },
     {
-      title: "Research Paper Accepted at IROS 2025",
-      date: "November 2024",
-      category: "Publication",
-      description: "Thrilled to announce that our paper 'SPACE: 3D Spatial Co-operation and Exploration Framework for Robust Mapping and Coverage with Multi-Robot Systems' has been submitted to IEEE IROS 2025. This work represents a significant advancement in multi-robot coordination.",
-      readTime: "3 min read"
+      title: "SPACE Framework Paper Submitted to IROS 2025",
+      date: "Nov 2024",
+      category: "Publication"
     },
     {
-      title: "Completed Summer Research at Louisville Automation",
-      date: "June 2024",
-      category: "Research Experience",
-      description: "Wrapped up an incredible research internship where I developed 3DS-SLAM, a real-time 3D Object Detection system for Visual SLAM with RGB-D and LiDAR sensors. The experience provided invaluable insights into sensor fusion techniques.",
-      readTime: "4 min read"
+      title: "Completed Research Internship at Louisville Automation",
+      date: "Jun 2024",
+      category: "Research"
     },
     {
-      title: "IEEE Technical Reviewer Appointment",
-      date: "March 2024",
-      category: "Professional Development",
-      description: "Honored to serve as a technical reviewer for IEEE AiDaS 2023 and IROS 2025 conferences. This role allows me to contribute to the peer review process and stay at the forefront of robotics and AI research.",
-      readTime: "2 min read"
+      title: "Appointed as IEEE Technical Reviewer",
+      date: "Mar 2024",
+      category: "Professional"
+    },
+    {
+      title: "AI Research Intern at Samsung R&D",
+      date: "Jul 2022",
+      category: "Industry"
+    },
+    {
+      title: "Won EY-GDS Hackpions 3.0 - 1st Position",
+      date: "2021",
+      category: "Achievement"
     }
   ];
 
@@ -42,24 +44,20 @@ export default function UpdatesSection() {
             Stay updated with my latest research progress, academic milestones, and professional achievements.
           </p>
           
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-4">
             {updates.map((update, index) => (
-              <div key={index} className="bg-slate-50 rounded-lg p-5 hover:bg-slate-100 transition-colors">
-                <div className="flex items-center gap-3 mb-3">
+              <div key={index} className="bg-slate-50 rounded-lg p-4 hover:bg-slate-100 transition-colors">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-sm font-medium text-academic-slate">
+                    {update.date}
+                  </span>
                   <span className="bg-academic-blue text-white px-2 py-1 rounded text-xs font-medium">
                     {update.category}
                   </span>
-                  <span className="flex items-center text-sm text-academic-slate">
-                    <Calendar className="mr-1 h-3 w-3" />
-                    {update.date}
-                  </span>
                 </div>
-                <h3 className="text-lg font-semibold text-academic-dark mb-2">
+                <h3 className="text-sm font-semibold text-academic-dark">
                   {update.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-academic-slate">
-                  {update.description}
-                </p>
               </div>
             ))}
           </div>
