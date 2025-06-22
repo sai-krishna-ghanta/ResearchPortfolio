@@ -4,34 +4,36 @@ import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 export default function UpdatesSection() {
   const updates = [
     {
-      title: "Started PhD Journey at University of Georgia",
-      date: "Aug 2024",
-      category: "Academic"
+      title: "SPACE Framework Paper Submitted to IROS 2025",
+      date: "November 2024"
     },
     {
-      title: "SPACE Framework Paper Submitted to IROS 2025",
-      date: "Nov 2024",
-      category: "Publication"
+      title: "MGPRL Paper Submitted to IROS 2025", 
+      date: "November 2024"
+    },
+    {
+      title: "Started PhD Journey at University of Georgia",
+      date: "August 2024"
     },
     {
       title: "Completed Research Internship at Louisville Automation",
-      date: "Jun 2024",
-      category: "Research"
+      date: "June 2024"
     },
     {
-      title: "Appointed as IEEE Technical Reviewer",
-      date: "Mar 2024",
-      category: "Professional"
+      title: "Appointed as IEEE Technical Reviewer for IROS 2025",
+      date: "March 2024"
     },
     {
-      title: "AI Research Intern at Samsung R&D",
-      date: "Jul 2022",
-      category: "Industry"
+      title: "AI Research Intern at Samsung R&D Institute",
+      date: "July 2022"
     },
     {
       title: "Won EY-GDS Hackpions 3.0 - 1st Position",
-      date: "2021",
-      category: "Achievement"
+      date: "2021"
+    },
+    {
+      title: "Dean's List of Academic Excellence Award",
+      date: "2021"
     }
   ];
 
@@ -39,33 +41,21 @@ export default function UpdatesSection() {
     <section>
       <Card>
         <CardContent className="p-8">
-          <h2 className="text-3xl font-bold text-academic-dark mb-8">Updates</h2>
-          <p className="text-academic-slate mb-8">
-            Stay updated with my latest research progress, academic milestones, and professional achievements.
-          </p>
+          <h2 className="text-3xl font-bold text-academic-dark mb-8">Updates Archive</h2>
           
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="space-y-4">
             {updates.map((update, index) => (
-              <div key={index} className="bg-slate-50 rounded-lg p-4 hover:bg-slate-100 transition-colors">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm font-medium text-academic-slate">
-                    {update.date}
-                  </span>
-                  <span className="bg-academic-blue text-white px-2 py-1 rounded text-xs font-medium">
-                    {update.category}
+              <div key={index} className="flex justify-between items-start border-b border-slate-200 pb-3">
+                <span className="font-medium text-academic-dark w-40 flex-shrink-0">
+                  {update.date}
+                </span>
+                <div className="flex-1">
+                  <span className="text-academic-blue hover:text-blue-700 cursor-pointer">
+                    {update.title}
                   </span>
                 </div>
-                <h3 className="text-sm font-semibold text-academic-dark">
-                  {update.title}
-                </h3>
               </div>
             ))}
-          </div>
-          
-          <div className="mt-8 text-center">
-            <p className="text-sm text-academic-slate">
-              Want to stay updated? Connect with me on social media or subscribe to my research updates.
-            </p>
           </div>
         </CardContent>
       </Card>

@@ -62,7 +62,7 @@ export default function HomeSection() {
 
 
       {/* Research Interests */}
-      <Card>
+      <Card className="mb-8">
         <CardContent className="p-8">
           <h3 className="text-2xl font-semibold text-academic-dark mb-6">Research Interests</h3>
           <div className="grid md:grid-cols-2 gap-6">
@@ -96,6 +96,39 @@ export default function HomeSection() {
                   <h4 className="text-lg font-semibold text-academic-dark">Deep Learning</h4>
                   <p className="text-lg text-academic-slate">DEEP RL, GANs, Vision Transformers</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Recent Updates */}
+      <Card>
+        <CardContent className="p-8">
+          <h3 className="text-2xl font-semibold text-academic-dark mb-6">Recent Updates</h3>
+          <div className="space-y-4">
+            <div className="flex justify-between items-start">
+              <span className="font-medium text-academic-dark w-32">Nov 2024</span>
+              <div className="flex-1">
+                <span className="text-academic-blue">SPACE Framework Paper Submitted to IROS 2025</span>
+              </div>
+            </div>
+            <div className="flex justify-between items-start">
+              <span className="font-medium text-academic-dark w-32">Aug 2024</span>
+              <div className="flex-1">
+                <span className="text-academic-blue">Started PhD Journey at University of Georgia</span>
+              </div>
+            </div>
+            <div className="flex justify-between items-start">
+              <span className="font-medium text-academic-dark w-32">Jun 2024</span>
+              <div className="flex-1">
+                <span className="text-academic-blue">Completed Research Internship at Louisville Automation</span>
+              </div>
+            </div>
+            <div className="flex justify-between items-start">
+              <span className="font-medium text-academic-dark w-32">Mar 2024</span>
+              <div className="flex-1">
+                <span className="text-academic-blue">Appointed as IEEE Technical Reviewer</span>
               </div>
             </div>
           </div>
