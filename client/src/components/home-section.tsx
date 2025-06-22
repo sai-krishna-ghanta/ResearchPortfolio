@@ -15,10 +15,13 @@ export default function HomeSection() {
                 <p className="text-lg leading-relaxed mb-4">
                   I am a PhD student in Artificial Intelligence at the University of Georgia, working under the guidance of Dr. Ramviyas Parasuraman at the HeRoLab. My research focuses on multi-robot systems, computer vision, and autonomous navigation in complex environments.
                 </p>
-                <p className="leading-relaxed mb-4">
-                  I have been actively researching on robotics and AI, focusing on multi-robot systems, SLAM, AI frameworks.
+                <p className="text-lg leading-relaxed mb-4">
+                  I have been actively researching on robotics and AI, focusing on multi-robot systems, SLAM, Autonomous systems.
                 </p>
-                <p className="leading-relaxed">
+                <p className="text-lg leading-relaxed mb-4">
+                  I completed my Bachelor of Technology in Data Science and Artificial Intelligence from IIIT Naya Raipur with a GPA of 8.96/10, earning the Dean's List of Academic Excellence Award in 2021 and 2023. I also achieved a 99.5 percentile in the JEE entrance exam with over 10 lakh test takers.
+                </p>
+                <p className="text-lg leading-relaxed">
                   Prior to my PhD, I gained valuable research experience at Samsung R&D Institute, Louisville Automation & Robotics Research Institute, and various academic labs, focusing on deep learning applications in computer vision and robotics.
                 </p>
               </div>
@@ -47,8 +50,8 @@ export default function HomeSection() {
             
             <div className="flex justify-center">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&h=387&q=80" 
-                alt="Professional headshot" 
+                src="@assets/1728262143037_1750635317055.jpeg" 
+                alt="Ghanta Sai Krishna - Professional headshot" 
                 className="rounded-full w-64 h-64 object-cover shadow-lg border-4 border-white"
               />
             </div>
@@ -56,6 +59,33 @@ export default function HomeSection() {
         </CardContent>
       </Card>
       
+      {/* Work Experience */}
+      <Card className="mb-8">
+        <CardContent className="p-8">
+          <h3 className="text-2xl font-semibold text-academic-dark mb-6">Recent Experience</h3>
+          <div className="space-y-6">
+            <div className="border-l-4 border-academic-blue pl-6">
+              <h4 className="text-lg font-semibold text-academic-dark">Graduate Research Assistant</h4>
+              <p className="text-academic-blue font-medium">HeRoLab Lab, University of Georgia</p>
+              <p className="text-lg text-academic-slate">August 2024 - Present</p>
+              <p className="text-lg mt-2">Working on multi-robot systems, developing SPACE framework and MGPRL for distributed localization</p>
+            </div>
+            <div className="border-l-4 border-slate-300 pl-6">
+              <h4 className="text-lg font-semibold text-academic-dark">Visiting Research Intern</h4>
+              <p className="text-academic-blue font-medium">Louisville Automation & Robotics Research Institute</p>
+              <p className="text-lg text-academic-slate">January 2023 - June 2024</p>
+              <p className="text-lg mt-2">Developed 3DS-SLAM for real-time 3D object detection in Visual SLAM with RGB-D and LiDAR</p>
+            </div>
+            <div className="border-l-4 border-slate-300 pl-6">
+              <h4 className="text-lg font-semibold text-academic-dark">AI Research Intern</h4>
+              <p className="text-academic-blue font-medium">Samsung R&D Institute, India</p>
+              <p className="text-lg text-academic-slate">July 2022 - January 2023</p>
+              <p className="text-lg mt-2">Designed GANs for synthetic data generation for OCR in Bixby Vision</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
       {/* Research Interests */}
       <Card>
         <CardContent className="p-8">
@@ -65,15 +95,15 @@ export default function HomeSection() {
               <div className="flex items-start space-x-3">
                 <Users className="text-academic-blue mt-1 h-5 w-5" />
                 <div>
-                  <h4 className="font-semibold text-academic-dark">Multi-Robot Systems</h4>
-                  <p className="text-sm text-academic-slate">Cooperative exploration, distributed localization, task planning</p>
+                  <h4 className="text-lg font-semibold text-academic-dark">Multi-Robot Systems</h4>
+                  <p className="text-lg text-academic-slate">Cooperative exploration, distributed localization, task planning</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <Eye className="text-academic-blue mt-1 h-5 w-5" />
                 <div>
-                  <h4 className="font-semibold text-academic-dark">Computer Vision</h4>
-                  <p className="text-sm text-academic-slate">SLAM, 3D object detection, RGB-D and LiDAR fusion</p>
+                  <h4 className="text-lg font-semibold text-academic-dark">Computer Vision</h4>
+                  <p className="text-lg text-academic-slate">SLAM, 3D object detection, RGB-D and LiDAR fusion</p>
                 </div>
               </div>
             </div>
@@ -81,15 +111,15 @@ export default function HomeSection() {
               <div className="flex items-start space-x-3">
                 <Brain className="text-academic-blue mt-1 h-5 w-5" />
                 <div>
-                  <h4 className="font-semibold text-academic-dark">Robotics & AI</h4>
-                  <p className="text-sm text-academic-slate">Autonomous navigation, sensor fusion, Gaussian processes</p>
+                  <h4 className="text-lg font-semibold text-academic-dark">Robotics & AI</h4>
+                  <p className="text-lg text-academic-slate">Autonomous navigation, sensor fusion, Gaussian processes</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <Languages className="text-academic-blue mt-1 h-5 w-5" />
                 <div>
-                  <h4 className="font-semibold text-academic-dark">Deep Learning</h4>
-                  <p className="text-sm text-academic-slate">GANs, vision transformers, neural architecture search</p>
+                  <h4 className="text-lg font-semibold text-academic-dark">Deep Learning</h4>
+                  <p className="text-lg text-academic-slate">GANs, vision transformers, neural architecture search</p>
                 </div>
               </div>
             </div>
