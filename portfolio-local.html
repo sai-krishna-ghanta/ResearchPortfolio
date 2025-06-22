@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghanta Sai Krishna - Research Portfolio</title>
+    <meta name="description" content="PhD student in Artificial Intelligence at University of Georgia, specializing in robotics, computer vision, and multi-robot systems.">
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .text-academic-blue { color: rgb(59, 130, 246); }
+        .text-academic-slate { color: rgb(100, 116, 139); }
+        .text-academic-dark { color: rgb(15, 23, 42); }
+        .bg-academic-blue { background-color: rgb(59, 130, 246); }
+        .border-academic-blue { border-color: rgb(59, 130, 246); }
+        .hover\:bg-academic-blue:hover { background-color: rgb(59, 130, 246); }
+        .hover\:text-academic-blue:hover { color: rgb(59, 130, 246); }
+        .hover\:text-blue-700:hover { color: rgb(29, 78, 216); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState } = React;
+
+        // Header Component
+        function Header({ activeTab, setActiveTab }) {
+            const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+            const navItems = [
+                { id: "home", label: "Home" },
+                { id: "research", label: "Recent Research" },
+                { id: "publications", label: "Publications" },
+                { id: "updates", label: "Updates" },
+                { id: "resume", label: "Resume" },
+                { id: "contact", label: "Contact" },
+            ];
+
+            const handleTabChange = (tab) => {
+                setActiveTab(tab);
+                setMobileMenuOpen(false);
+            };
+
+            return (
+                <header className="bg-white shadow-sm border-b border-slate-200 sticky top-0 z-50">
+                    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="flex justify-between items-center py-4">
+                            <div className="flex items-center space-x-4">
+                                <h1 className="text-xl font-semibold text-academic-dark">Ghanta Sai Krishna</h1>
+                                <span className="text-sm text-academic-slate">PhD Student in Artificial Intelligence</span>
+                            </div>
+                            
+                            <nav className="hidden md:flex space-x-8">
+                                {navItems.map((item) => (
+                                    <button
+                                        key={item.id}
+                                        onClick={() => handleTabChange(item.id)}
+                                        className={`transition-colors pb-1 ${
+                                            activeTab === item.id
+                                                ? "text-academic-blue border-b-2 border-academic-blue font-medium"
+                                                : "text-academic-slate hover:text-academic-blue"
+                                        }`}
+                                    >
+                                        {item.label}
+                                    </button>
+                                ))}
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+            );
+        }
+
+        // Home Section Component
+        function HomeSection() {
+            return (
+                <section>
+                    <div className="bg-white rounded-lg shadow-sm border border-slate-200 mb-8">
+                        <div className="p-8">
+                            <div className="grid md:grid-cols-3 gap-8 items-start">
+                                <div className="md:col-span-2">
+                                    <h2 className="text-3xl font-bold text-academic-dark mb-4">Ghanta Sai Krishna</h2>
+                                    <h3 className="text-xl text-academic-blue mb-6">PhD Student in Artificial Intelligence</h3>
+                                    <div className="prose prose-slate max-w-none">
+                                        <p className="text-lg leading-relaxed mb-4">
+                                            I am a PhD student in Artificial Intelligence at the University of Georgia, working under the guidance of Dr. Ramviyas Parasuraman at the HeRoLab. My research focuses on multi-robot systems, computer vision, and autonomous navigation in complex environments.
+                                        </p>
+                                        <p className="text-lg leading-relaxed mb-4">
+                                            I have been actively researching on robotics and AI, focusing on multi-robot systems, SLAM, Autonomous systems.
+                                        </p>
+                                        <p className="text-lg leading-relaxed mb-4">
+                                            I completed my Bachelor of Technology in Data Science and Artificial Intelligence from IIIT Naya Raipur.
+                                        </p>
+                                        <p className="text-lg leading-relaxed">
+                                            Prior to my PhD, I gained valuable research experience at Samsung R&D Institute, Louisville Automation & Robotics Research Institute, and various academic labs, focusing on deep learning applications in computer vision and robotics.
+                                        </p>
+                                    </div>
+                                    
+                                    <div className="flex flex-wrap gap-4 mt-8">
+                                        <a href="https://scholar.google.com/citations?user=lrK_Y8AAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 border border-academic-blue text-academic-blue hover:bg-blue-50 rounded-lg transition-colors">
+                                            🎓 Google Scholar
+                                        </a>
+                                        <a href="https://github.com/sai-krishna-ghanta/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 border border-academic-blue text-academic-blue hover:bg-blue-50 rounded-lg transition-colors">
+                                            🔗 GitHub
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/sai-krishna-ghanta-320ab0211/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 border border-academic-blue text-academic-blue hover:bg-blue-50 rounded-lg transition-colors">
+                                            💼 LinkedIn
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div className="flex justify-center">
+                                    <div className="rounded-full w-64 h-64 bg-gradient-to-br from-blue-100 to-blue-200 border-4 border-white shadow-lg flex items-center justify-center text-academic-blue font-semibold">
+                                        Profile Photo
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {/* Research Interests */}
+                    <div className="bg-white rounded-lg shadow-sm border border-slate-200 mb-8">
+                        <div className="p-8">
+                            <h3 className="text-2xl font-semibold text-academic-dark mb-6">Research Interests</h3>
+                            <div className="grid md:grid-cols-2 gap-6">
+                                <div className="space-y-4">
+                                    <div className="flex items-start space-x-3">
+                                        <div className="text-academic-blue mt-1">👥</div>
+                                        <div>
+                                            <h4 className="text-lg font-semibold text-academic-dark">Multi-Robot Systems</h4>
+                                            <p className="text-lg text-academic-slate">Cooperative exploration, distributed localization, task planning</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-start space-x-3">
+                                        <div className="text-academic-blue mt-1">👁️</div>
+                                        <div>
+                                            <h4 className="text-lg font-semibold text-academic-dark">Computer Vision</h4>
+                                            <p className="text-lg text-academic-slate">SLAM, 3D object detection, RGB-D and LiDAR fusion</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="space-y-4">
+                                    <div className="flex items-start space-x-3">
+                                        <div className="text-academic-blue mt-1">🤖</div>
+                                        <div>
+                                            <h4 className="text-lg font-semibold text-academic-dark">Robotics & AI</h4>
+                                            <p className="text-lg text-academic-slate">Autonomous navigation, sensor fusion, Gaussian Processes</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-start space-x-3">
+                                        <div className="text-academic-blue mt-1">🧠</div>
+                                        <div>
+                                            <h4 className="text-lg font-semibold text-academic-dark">Deep Learning</h4>
+                                            <p className="text-lg text-academic-slate">DEEP RL, GANs, Vision Transformers</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Recent Updates */}
+                    <div className="bg-white rounded-lg shadow-sm border border-slate-200">
+                        <div className="p-8">
+                            <h3 className="text-2xl font-semibold text-academic-dark mb-6">Recent Updates</h3>
+                            <div className="space-y-4">
+                                <div className="flex justify-between items-start">
+                                    <span className="font-medium text-academic-dark w-32">Nov 2024</span>
+                                    <div className="flex-1">
+                                        <span className="text-academic-blue">SPACE Framework Paper Submitted to IROS 2025</span>
+                                    </div>
+                                </div>
+                                <div className="flex justify-between items-start">
+                                    <span className="font-medium text-academic-dark w-32">Aug 2024</span>
+                                    <div className="flex-1">
+                                        <span className="text-academic-blue">Started PhD Journey at University of Georgia</span>
+                                    </div>
+                                </div>
+                                <div className="flex justify-between items-start">
+                                    <span className="font-medium text-academic-dark w-32">Jun 2024</span>
+                                    <div className="flex-1">
+                                        <span className="text-academic-blue">Completed Research Internship at Louisville Automation</span>
+                                    </div>
+                                </div>
+                                <div className="flex justify-between items-start">
+                                    <span className="font-medium text-academic-dark w-32">Mar 2024</span>
+                                    <div className="flex-1">
+                                        <span className="text-academic-blue">Appointed as IEEE Technical Reviewer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            );
+        }
+
+        // Simple message for other sections
+        function OtherSection({ title }) {
+            return (
+                <div className="bg-white rounded-lg shadow-sm border border-slate-200">
+                    <div className="p-8">
+                        <h2 className="text-3xl font-bold text-academic-dark mb-4">{title}</h2>
+                        <p className="text-academic-slate">This section is available in the full portfolio website.</p>
+                    </div>
+                </div>
+            );
+        }
+
+        // Footer Component
+        function Footer() {
+            return (
+                <footer className="bg-white border-t border-slate-200 mt-16">
+                    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                        <div className="flex flex-col md:flex-row justify-between items-center">
+                            <p className="text-sm text-academic-slate">
+                                © 2024 Ghanta Sai Krishna. All rights reserved.
+                            </p>
+                            <div className="flex space-x-6 mt-4 md:mt-0">
+                                <a href="#" className="text-academic-slate hover:text-academic-blue transition-colors">🐦</a>
+                                <a href="#" className="text-academic-slate hover:text-academic-blue transition-colors">🔗</a>
+                                <a href="#" className="text-academic-slate hover:text-academic-blue transition-colors">💼</a>
+                                <a href="#" className="text-academic-slate hover:text-academic-blue transition-colors">🎓</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            );
+        }
+
+        // Main App Component
+        function App() {
+            const [activeTab, setActiveTab] = useState("home");
+
+            const renderActiveSection = () => {
+                switch (activeTab) {
+                    case "home":
+                        return <HomeSection />;
+                    case "research":
+                        return <OtherSection title="Recent Research" />;
+                    case "publications":
+                        return <OtherSection title="Publications" />;
+                    case "updates":
+                        return <OtherSection title="Updates Archive" />;
+                    case "resume":
+                        return <OtherSection title="Resume" />;
+                    case "contact":
+                        return <OtherSection title="Contact" />;
+                    default:
+                        return <HomeSection />;
+                }
+            };
+
+            return (
+                <div className="min-h-screen bg-slate-50 text-slate-700">
+                    <Header activeTab={activeTab} setActiveTab={setActiveTab} />
+                    <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                        {renderActiveSection()}
+                    </main>
+                    <Footer />
+                </div>
+            );
+        }
+
+        // Render the app
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
