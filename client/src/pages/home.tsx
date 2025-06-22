@@ -1,19 +1,22 @@
 import { useState } from "react";
 import Header from "@/components/header";
-import AboutSection from "@/components/about-section";
-import ResumeSection from "@/components/resume-section";
+import HomeSection from "@/components/home-section";
+import ResearchSection from "@/components/research-section";
 import PublicationsSection from "@/components/publications-section";
 import UpdatesSection from "@/components/updates-section";
+import ResumeSection from "@/components/resume-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("about");
+  const [activeTab, setActiveTab] = useState("home");
 
   const renderActiveSection = () => {
     switch (activeTab) {
-      case "about":
-        return <AboutSection />;
+      case "home":
+        return <HomeSection />;
+      case "research":
+        return <ResearchSection />;
       case "publications":
         return <PublicationsSection />;
       case "updates":
@@ -23,7 +26,7 @@ export default function Home() {
       case "contact":
         return <ContactSection />;
       default:
-        return <AboutSection />;
+        return <HomeSection />;
     }
   };
 

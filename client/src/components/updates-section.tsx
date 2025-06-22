@@ -42,39 +42,25 @@ export default function UpdatesSection() {
             Stay updated with my latest research progress, academic milestones, and professional achievements.
           </p>
           
-          <div className="space-y-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {updates.map((update, index) => (
-              <article key={index} className="border border-slate-200 rounded-lg p-6 hover:shadow-md transition-shadow">
-                <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-4 mb-3">
-                      <span className="bg-academic-blue text-white px-3 py-1 rounded-full text-xs font-medium">
-                        {update.category}
-                      </span>
-                      <span className="flex items-center text-sm text-academic-slate">
-                        <Calendar className="mr-2 h-4 w-4" />
-                        {update.date}
-                      </span>
-                      <span className="flex items-center text-sm text-academic-slate">
-                        <Clock className="mr-2 h-4 w-4" />
-                        {update.readTime}
-                      </span>
-                    </div>
-                    <h3 className="text-xl font-semibold text-academic-dark mb-3">
-                      {update.title}
-                    </h3>
-                    <p className="text-sm leading-relaxed text-academic-slate">
-                      {update.description}
-                    </p>
-                  </div>
-                  <div className="mt-4 lg:mt-0 lg:ml-6">
-                    <button className="flex items-center text-academic-blue hover:text-blue-700 text-sm font-medium">
-                      Read more
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </button>
-                  </div>
+              <div key={index} className="bg-slate-50 rounded-lg p-5 hover:bg-slate-100 transition-colors">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="bg-academic-blue text-white px-2 py-1 rounded text-xs font-medium">
+                    {update.category}
+                  </span>
+                  <span className="flex items-center text-sm text-academic-slate">
+                    <Calendar className="mr-1 h-3 w-3" />
+                    {update.date}
+                  </span>
                 </div>
-              </article>
+                <h3 className="text-lg font-semibold text-academic-dark mb-2">
+                  {update.title}
+                </h3>
+                <p className="text-sm leading-relaxed text-academic-slate">
+                  {update.description}
+                </p>
+              </div>
             ))}
           </div>
           

@@ -11,8 +11,9 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { id: "about", label: "About" },
-    { id: "publications", label: "Publications & Research" },
+    { id: "home", label: "Home" },
+    { id: "research", label: "Research" },
+    { id: "publications", label: "Publications" },
     { id: "updates", label: "Updates" },
     { id: "resume", label: "Resume" },
     { id: "contact", label: "Contact" },
