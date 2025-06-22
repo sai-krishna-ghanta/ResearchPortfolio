@@ -12,9 +12,9 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
 
   const navItems = [
     { id: "about", label: "About" },
+    { id: "publications", label: "Publications & Research" },
+    { id: "updates", label: "Updates" },
     { id: "resume", label: "Resume" },
-    { id: "publications", label: "Publications" },
-    { id: "talks", label: "Talks" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -28,8 +28,8 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-4">
-            <h1 className="text-xl font-semibold text-academic-dark">Dr. Sarah Chen</h1>
-            <span className="text-sm text-academic-slate">Research Student in Computer Science</span>
+            <h1 className="text-xl font-semibold text-academic-dark">Ghanta Sai Krishna</h1>
+            <span className="text-sm text-academic-slate">PhD Student in Artificial Intelligence</span>
           </div>
           
           <nav className="hidden md:flex space-x-8">

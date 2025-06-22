@@ -26,10 +26,10 @@ export default function ContactSection() {
                   <div>
                     <p className="font-medium text-academic-dark">Email</p>
                     <a 
-                      href="mailto:sarah.chen@stanford.edu" 
+                      href="mailto:ghanta20102@iiitnr.edu.in" 
                       className="text-academic-blue hover:text-blue-700"
                     >
-                      sarah.chen@stanford.edu
+                      ghanta20102@iiitnr.edu.in
                     </a>
                   </div>
                 </div>
@@ -41,8 +41,8 @@ export default function ContactSection() {
                   <div>
                     <p className="font-medium text-academic-dark">Office</p>
                     <p className="text-academic-slate">
-                      Gates Computer Science Building<br />
-                      Room 392, Stanford, CA 94305
+                      HeRoLab, School of Computing<br />
+                      University of Georgia, Athens, GA 30602
                     </p>
                   </div>
                 </div>
@@ -54,10 +54,10 @@ export default function ContactSection() {
                   <div>
                     <p className="font-medium text-academic-dark">Phone</p>
                     <a 
-                      href="tel:+1-650-123-4567" 
+                      href="tel:+1-502-821-2059" 
                       className="text-academic-blue hover:text-blue-700"
                     >
-                      +1 (650) 123-4567
+                      +1 (502) 821-2059
                     </a>
                   </div>
                 </div>

@@ -6,29 +6,53 @@ import { FileText, Github, ExternalLink, Trophy, ArrowRight } from "lucide-react
 export default function PublicationsSection() {
   const publications = [
     {
-      title: "Attention-Based Neural Architecture Search for Efficient Language Models",
-      authors: "Sarah Chen, Michael Zhang, Jennifer Liu",
-      venue: "Neural Information Processing Systems (NeurIPS)",
-      year: "2023",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-      description: "We propose a novel attention-based neural architecture search method that automatically discovers efficient architectures for large language models. Our approach reduces computational cost by 40% while maintaining comparable performance on downstream tasks.",
-      award: "Best Paper Award"
+      title: "SPACE: 3D Spatial Co-operation and Exploration Framework for Robust Mapping and Coverage with Multi-Robot Systems",
+      authors: "Ghanta Sai Krishna, and Ramviyas Parasuraman",
+      venue: "arXiv preprint arXiv:2411.02524 (2024), submitted to IEEE IROS 2025",
+      year: "2024",
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      description: "Developed an online 3D spatial exploration framework for multi-robot systems utilizing situational awareness and dynamic filter to mitigate ghosting trail effect in 3D reconstructions."
     },
     {
-      title: "Interpretable Multi-Modal Learning for Medical Image Analysis",
-      authors: "Sarah Chen, David Kim, Prof. Andrew Ng",
-      venue: "International Conference on Machine Learning (ICML)",
-      year: "2023",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-      description: "A novel approach to multi-modal learning that combines visual and textual medical data while providing interpretable explanations for diagnostic decisions. Validated on large-scale medical datasets."
+      title: "MGPRL: Distributed Multi-Gaussian Processes for Wi-Fi-based Multi-Robot Relative Localization in Large Indoor Environments",
+      authors: "Ghanta Sai Krishna, and Ramviyas Parasuraman",
+      venue: "submitted to IEEE IROS 2025",
+      year: "2024",
+      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      description: "Introduced a distributed multi-robot relative localization approach leveraging uncertainty-aware Gaussian Processes and Wi-Fi RSSI signals for robust, efficient pose estimation in GPS-denied environments."
     },
     {
-      title: "Federated Learning with Differential Privacy for Healthcare Applications",
-      authors: "Sarah Chen, Maria Rodriguez, Prof. Fei-Fei Li",
-      venue: "International Conference on Learning Representations (ICLR)",
+      title: "3DS-SLAM: A 3D Object Detection based Semantic SLAM towards Dynamic Indoor Environments",
+      authors: "Ghanta Sai Krishna, Kundrapu Supriya, and Sabur Baidya",
+      venue: "arXiv preprint arXiv:2310.06385 (2023), submitted to IEEE IROS 2025",
+      year: "2023",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      description: "Developed real-time 3D Object Detection in Visual SLAM with RGB-D and LiDAR sensors for dynamic indoor environments."
+    },
+    {
+      title: "Deep Learning based Holistic Speaker Independent Visual Speech Recognition",
+      authors: "P. Nemani, Ghanta Sai Krishna, N. Ramisetty, B. D. S. Sai and S. Kumar",
+      venue: "IEEE Transactions on Artificial Intelligence",
       year: "2022",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-      description: "We present a federated learning framework that preserves patient privacy through differential privacy mechanisms while enabling collaborative training across multiple healthcare institutions."
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      description: "Developed a scalable AI system LIPAR: a person independent spatio-temporal visual speech recognition system via a mobile application.",
+      award: "IEEE TAI Publication"
+    },
+    {
+      title: "Adversarial Security and Differential Privacy in mmWave Beam Prediction in 6G networks",
+      authors: "Ghanta Sai Krishna, Kundrapu Supriya, and Sabur Baidya",
+      venue: "IEEE CSNet 2023",
+      year: "2023",
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      description: "Research on security and privacy considerations in next-generation wireless communication systems."
+    },
+    {
+      title: "Epersist: A Two-Wheeled Self Balancing Robot Using PID Controller And Deep Reinforcement Learning",
+      authors: "Ghanta Sai Krishna, Dyavat Sumith, and Garika Akshay",
+      venue: "2022 22nd International Conference on Control, Automation and Systems (ICCAS), IEEE",
+      year: "2022",
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      description: "Developed a two-wheeled self-balancing robot combining traditional PID control with deep reinforcement learning approaches."
     }
   ];
 

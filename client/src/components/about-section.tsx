@@ -9,17 +9,17 @@ export default function AboutSection() {
         <CardContent className="p-8">
           <div className="grid md:grid-cols-3 gap-8 items-start">
             <div className="md:col-span-2">
-              <h2 className="text-3xl font-bold text-academic-dark mb-4">Dr. Sarah Chen</h2>
-              <h3 className="text-xl text-academic-blue mb-6">PhD Candidate in Computer Science</h3>
+              <h2 className="text-3xl font-bold text-academic-dark mb-4">Ghanta Sai Krishna</h2>
+              <h3 className="text-xl text-academic-blue mb-6">PhD Student in Artificial Intelligence</h3>
               <div className="prose prose-slate max-w-none">
                 <p className="text-lg leading-relaxed mb-4">
-                  I am a PhD candidate in Computer Science at Stanford University, specializing in machine learning and artificial intelligence. My research focuses on developing novel algorithms for natural language processing and computer vision applications.
+                  I am a PhD student in Artificial Intelligence at the University of Georgia, working under the guidance of Dr. Ramviyas Parasuraman at the HeRoLab. My research focuses on multi-robot systems, computer vision, and autonomous navigation in complex environments.
                 </p>
                 <p className="leading-relaxed mb-4">
-                  My work has been published in top-tier venues including NeurIPS, ICML, and ICLR. I am particularly interested in the intersection of deep learning and human-computer interaction, exploring how AI systems can be made more interpretable and trustworthy.
+                  My work spans developing novel frameworks for 3D spatial cooperation, multi-robot localization using Gaussian processes, and real-time object detection in SLAM systems. I have published research in top-tier venues and conferences including IEEE IROS submissions and IEEE Transactions on Artificial Intelligence.
                 </p>
                 <p className="leading-relaxed">
-                  Before pursuing my PhD, I worked as a research scientist at Google AI, where I contributed to several open-source projects and collaborated with teams across different research areas.
+                  Prior to my PhD, I gained valuable research experience at Samsung R&D Institute, Louisville Automation & Robotics Research Institute, and various academic labs, focusing on deep learning applications in computer vision and robotics.
                 </p>
               </div>
               
@@ -53,33 +53,33 @@ export default function AboutSection() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
-                <Brain className="text-academic-blue mt-1 h-5 w-5" />
+                <Users className="text-academic-blue mt-1 h-5 w-5" />
                 <div>
-                  <h4 className="font-semibold text-academic-dark">Machine Learning</h4>
-                  <p className="text-sm text-academic-slate">Deep learning, neural networks, optimization algorithms</p>
+                  <h4 className="font-semibold text-academic-dark">Multi-Robot Systems</h4>
+                  <p className="text-sm text-academic-slate">Cooperative exploration, distributed localization, task planning</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Languages className="text-academic-blue mt-1 h-5 w-5" />
+                <Eye className="text-academic-blue mt-1 h-5 w-5" />
                 <div>
-                  <h4 className="font-semibold text-academic-dark">Natural Language Processing</h4>
-                  <p className="text-sm text-academic-slate">Transformer models, language understanding, generation</p>
+                  <h4 className="font-semibold text-academic-dark">Computer Vision</h4>
+                  <p className="text-sm text-academic-slate">SLAM, 3D object detection, RGB-D and LiDAR fusion</p>
                 </div>
               </div>
             </div>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
-                <Eye className="text-academic-blue mt-1 h-5 w-5" />
+                <Brain className="text-academic-blue mt-1 h-5 w-5" />
                 <div>
-                  <h4 className="font-semibold text-academic-dark">Computer Vision</h4>
-                  <p className="text-sm text-academic-slate">Image recognition, object detection, multimodal learning</p>
+                  <h4 className="font-semibold text-academic-dark">Robotics & AI</h4>
+                  <p className="text-sm text-academic-slate">Autonomous navigation, sensor fusion, Gaussian processes</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Users className="text-academic-blue mt-1 h-5 w-5" />
+                <Languages className="text-academic-blue mt-1 h-5 w-5" />
                 <div>
-                  <h4 className="font-semibold text-academic-dark">Human-Computer Interaction</h4>
-                  <p className="text-sm text-academic-slate">AI interpretability, user experience, trust in AI systems</p>
+                  <h4 className="font-semibold text-academic-dark">Deep Learning</h4>
+                  <p className="text-sm text-academic-slate">GANs, vision transformers, neural architecture search</p>
                 </div>
               </div>
             </div>

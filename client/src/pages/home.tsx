@@ -3,7 +3,7 @@ import Header from "@/components/header";
 import AboutSection from "@/components/about-section";
 import ResumeSection from "@/components/resume-section";
 import PublicationsSection from "@/components/publications-section";
-import TalksSection from "@/components/talks-section";
+import UpdatesSection from "@/components/updates-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
 
@@ -14,12 +14,12 @@ export default function Home() {
     switch (activeTab) {
       case "about":
         return <AboutSection />;
-      case "resume":
-        return <ResumeSection />;
       case "publications":
         return <PublicationsSection />;
-      case "talks":
-        return <TalksSection />;
+      case "updates":
+        return <UpdatesSection />;
+      case "resume":
+        return <ResumeSection />;
       case "contact":
         return <ContactSection />;
       default:

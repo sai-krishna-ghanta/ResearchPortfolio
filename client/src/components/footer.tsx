@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-academic-slate">
-            © 2024 Dr. Sarah Chen. All rights reserved.
+            © 2024 Ghanta Sai Krishna. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-academic-slate hover:text-academic-blue transition-colors">
