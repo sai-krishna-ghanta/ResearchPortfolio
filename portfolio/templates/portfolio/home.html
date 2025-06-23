@@ -1,0 +1,118 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title %}Ghanta Sai Krishna - AI Research Portfolio{% endblock %}
+
+{% block content %}
+<!-- Profile Section -->
+<div class="card">
+    <div class="card-content">
+        <div class="profile-grid">
+            <div class="profile-info">
+                <h1>Ghanta Sai Krishna</h1>
+                <p class="subtitle">PhD Student in Artificial Intelligence</p>
+                
+                <p>I am a PhD student in Artificial Intelligence at the University of Georgia, working under the guidance of Dr. Ramviyas Parasuraman at the HeRoLab. My research focuses on multi-robot systems, computer vision, and autonomous navigation in complex environments.</p>
+                
+                <p>I have been actively researching on robotics and AI, focusing on multi-robot systems, SLAM, Autonomous systems.</p>
+                
+                <p>I completed my Bachelor of Technology in Data Science and Artificial Intelligence from IIIT Naya Raipur.</p>
+                
+                <p>Prior to my PhD, I gained valuable research experience at Samsung R&D Institute, Louisville Automation & Robotics Research Institute, and various academic labs, focusing on deep learning applications in computer vision and robotics.</p>
+                
+                <div class="btn-group">
+                    <a href="https://scholar.google.com/citations?user=lrK_Y8AAAAAJ&hl=en" target="_blank" class="btn">
+                        🎓 Google Scholar
+                    </a>
+                    <a href="https://github.com/sai-krishna-ghanta/" target="_blank" class="btn">
+                        💻 GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/sai-krishna-ghanta-320ab0211/" target="_blank" class="btn">
+                        💼 LinkedIn
+                    </a>
+                </div>
+            </div>
+            
+            <div class="profile-image">
+                <img src="{% static 'images/profile.jpg' %}" alt="Ghanta Sai Krishna - Professional headshot">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Research Interests -->
+<div class="card">
+    <div class="card-content">
+        <h2 class="section-title">Research Interests</h2>
+        <div class="interests-grid">
+            <div class="interest-item">
+                <div class="interest-icon">👥</div>
+                <div class="interest-content">
+                    <h4>Multi-Robot Systems</h4>
+                    <p>Cooperative exploration, distributed localization, task planning</p>
+                </div>
+            </div>
+            
+            <div class="interest-item">
+                <div class="interest-icon">👁️</div>
+                <div class="interest-content">
+                    <h4>Computer Vision</h4>
+                    <p>SLAM, 3D object detection, RGB-D and LiDAR fusion</p>
+                </div>
+            </div>
+            
+            <div class="interest-item">
+                <div class="interest-icon">🧠</div>
+                <div class="interest-content">
+                    <h4>Robotics & AI</h4>
+                    <p>Autonomous navigation, sensor fusion, Gaussian Processes</p>
+                </div>
+            </div>
+            
+            <div class="interest-item">
+                <div class="interest-icon">🔬</div>
+                <div class="interest-content">
+                    <h4>Deep Learning</h4>
+                    <p>DEEP RL, GANs, Vision Transformers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Recent Updates -->
+<div class="card">
+    <div class="card-content">
+        <h2 class="section-title">Recent Updates</h2>
+        <div class="updates-grid">
+            <div class="update-item">
+                <div class="update-date">Nov 2024</div>
+                <div class="update-type publication">Publication</div>
+                <div class="update-title">SPACE Framework Paper Submitted to IROS 2025</div>
+            </div>
+            
+            <div class="update-item">
+                <div class="update-date">Aug 2024</div>
+                <div class="update-type education">Education</div>
+                <div class="update-title">Started PhD Journey at University of Georgia</div>
+            </div>
+            
+            <div class="update-item">
+                <div class="update-date">Jun 2024</div>
+                <div class="update-type experience">Experience</div>
+                <div class="update-title">Completed Research Internship at Louisville Automation</div>
+            </div>
+            
+            <div class="update-item">
+                <div class="update-date">Mar 2024</div>
+                <div class="update-type recognition">Recognition</div>
+                <div class="update-title">Appointed as IEEE Technical Reviewer</div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="{% url 'updates' %}" class="btn btn-primary">View All Updates →</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

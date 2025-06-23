@@ -1,71 +1,80 @@
-# Ghanta Sai Krishna - Portfolio Website
+# Ghanta Sai Krishna - Django Portfolio Website
 
-A professional portfolio website showcasing research in Artificial Intelligence, Multi-Robot Systems, and Computer Vision.
+A professional portfolio website built with Django, showcasing research in Artificial Intelligence, Multi-Robot Systems, and Computer Vision.
 
 ## 🚀 Quick Start - Local Development
 
-### Option 1: Full Development Environment
+### Django Application
 ```bash
-# Install dependencies
-npm install
+# Run migrations
+python manage.py migrate
 
-# Start the development server
-npm run dev
+# Start the Django development server
+python manage.py runserver 0.0.0.0:8000
 ```
-The website will be available at `http://localhost:5000`
+The website will be available at `http://localhost:8000`
 
-### Option 2: Local Static Version
+### Quick Launch Scripts
+- **Windows**: Double-click `start-local.bat`
+- **Mac/Linux**: Run `./start-local.sh`
+
+### Alternative Static Version
 Open `portfolio-local.html` directly in your browser for a standalone version.
 
 ## 📁 Project Structure
 
 ```
-├── client/                 # Frontend React application
-│   ├── src/
-│   │   ├── components/     # React components
-│   │   ├── pages/         # Page components
-│   │   └── lib/           # Utility functions
-│   └── index.html         # Main HTML template
-├── server/                # Backend Express server
-├── shared/                # Shared types and schemas
-├── portfolio-local.html   # Standalone local version
-└── package.json          # Project dependencies
+├── portfolio/              # Django application
+│   ├── templates/          # HTML templates
+│   ├── views.py           # View functions
+│   └── urls.py            # URL routing
+├── portfolio_site/        # Django project settings
+├── static/                # CSS, JavaScript, images
+│   ├── css/               # Stylesheet files
+│   ├── js/                # JavaScript files
+│   └── images/            # Static images
+├── manage.py              # Django management script
+└── portfolio-local.html   # Standalone local version
 ```
 
 ## 🛠 Making Changes
 
-1. **Edit Components**: Modify files in `client/src/components/`
-2. **Update Content**: Change data in component files
-3. **Styling**: Use Tailwind CSS classes
-4. **Hot Reload**: Changes appear instantly during development
+1. **Edit Templates**: Modify files in `portfolio/templates/portfolio/`
+2. **Update Content**: Change data in `portfolio/views.py`
+3. **Styling**: Edit `static/css/style.css`
+4. **JavaScript**: Modify `static/js/main.js`
+5. **Hot Reload**: Django automatically reloads on changes
 
 ## 📱 Sections
 
 - **Home**: Bio, education, research interests, recent updates
-- **Recent Research**: Featured research projects
-- **Publications**: Journals and conference papers
-- **Updates**: Academic milestones and achievements
+- **Research**: Featured research projects with detailed descriptions
+- **Publications**: Journals and conference papers organized by type
+- **Updates**: Academic milestones and achievements timeline
 - **Resume**: Education, experience, skills, awards
 - **Contact**: Professional links and contact information
 
 ## 🎨 Customization
 
-### Adding New Updates
-Edit `client/src/components/updates-section.tsx` and `client/src/components/home-section.tsx`
+### Adding New Research Projects
+Edit the `research_projects` list in `portfolio/views.py` research function
 
 ### Updating Publications
-Modify `client/src/components/publications-section.tsx`
+Modify the `journals` and `conferences` lists in `portfolio/views.py` publications function
 
-### Changing Research Content
-Edit `client/src/components/research-section.tsx`
+### Adding Updates
+Edit the `updates_list` in `portfolio/views.py` updates function
 
-## 📦 Dependencies
+### Changing Styles
+Modify `static/css/style.css` for custom styling
 
-- React 18
-- TypeScript
-- Tailwind CSS
-- Express.js
-- Vite (build tool)
+## 📦 Technologies
+
+- Django 5.2.3
+- Python 3.11
+- HTML5 & CSS3
+- Vanilla JavaScript
+- Responsive Design
 
 ## 🔗 Links
 

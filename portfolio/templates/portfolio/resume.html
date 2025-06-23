@@ -1,0 +1,158 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title %}Resume - Ghanta Sai Krishna{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-content">
+        <h1 class="section-title">Resume</h1>
+        
+        <!-- Education Section -->
+        <div class="resume-section">
+            <h2 class="section-subtitle">Education</h2>
+            
+            <div class="resume-item">
+                <h4>PhD in Artificial Intelligence</h4>
+                <p class="institution">University of Georgia, Athens, GA</p>
+                <p class="period">Aug 2024 - Present</p>
+                <p class="description">
+                    Research focus on multi-robot systems, computer vision, and autonomous navigation under Dr. Ramviyas Parasuraman at HeRoLab. 
+                    Developing frameworks for distributed localization and cooperative exploration in complex environments.
+                </p>
+            </div>
+            
+            <div class="resume-item">
+                <h4>Bachelor of Technology in Data Science and Artificial Intelligence</h4>
+                <p class="institution">IIIT Naya Raipur, India</p>
+                <p class="period">2019 - 2023</p>
+                <p class="description">
+                    Graduated with Dean's List recognition. Focused on machine learning, deep learning, computer vision, and robotics applications.
+                    Completed thesis on 3D object detection in dynamic environments.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Experience Section -->
+        <div class="resume-section">
+            <h2 class="section-subtitle">Research Experience</h2>
+            
+            <div class="resume-item">
+                <h4>Research Assistant</h4>
+                <p class="institution">HeRoLab, University of Georgia</p>
+                <p class="period">Aug 2024 - Present</p>
+                <p class="description">
+                    Developing SPACE framework for 3D spatial cooperation and exploration with multi-robot systems. 
+                    Working on distributed localization using Gaussian Processes and Wi-Fi RSSI signals.
+                </p>
+            </div>
+            
+            <div class="resume-item">
+                <h4>Research Intern</h4>
+                <p class="institution">Louisville Automation & Robotics Research Institute</p>
+                <p class="period">Jan 2024 - Jun 2024</p>
+                <p class="description">
+                    Conducted research on autonomous navigation systems and sensor fusion techniques. 
+                    Developed algorithms for robust localization in GPS-denied environments.
+                </p>
+            </div>
+            
+            <div class="resume-item">
+                <h4>Software Development Intern</h4>
+                <p class="institution">Samsung R&D Institute India, Bangalore</p>
+                <p class="period">Jun 2023 - Aug 2023</p>
+                <p class="description">
+                    Worked on computer vision applications for mobile devices. 
+                    Implemented deep learning models for real-time object detection and tracking.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Skills Section -->
+        <div class="resume-section">
+            <h2 class="section-subtitle">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">R</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Robotics & AI</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ROS/ROS2</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">PCL</span>
+                        <span class="skill-tag">Gazebo</span>
+                        <span class="skill-tag">SLAM</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Machine Learning</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">Pandas</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Tools & Platforms</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">CUDA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Awards Section -->
+        <div class="resume-section">
+            <h2 class="section-subtitle">Awards & Recognition</h2>
+            
+            <div class="resume-item">
+                <h4>IEEE Technical Reviewer</h4>
+                <p class="institution">Institute of Electrical and Electronics Engineers</p>
+                <p class="period">Mar 2024</p>
+                <p class="description">
+                    Appointed as technical reviewer for IEEE conferences and journals in robotics and AI.
+                </p>
+            </div>
+            
+            <div class="resume-item">
+                <h4>Dean's List for Academic Excellence</h4>
+                <p class="institution">IIIT Naya Raipur</p>
+                <p class="period">2022 - 2023</p>
+                <p class="description">
+                    Recognized for outstanding academic performance with GPA above 9.0/10.0.
+                </p>
+            </div>
+            
+            <div class="resume-item">
+                <h4>Best Project Award</h4>
+                <p class="institution">National Conference on AI & Robotics</p>
+                <p class="period">2023</p>
+                <p class="description">
+                    Awarded for innovative 3D object detection approach in dynamic environments.
+                </p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="#" class="btn btn-primary">📄 Download PDF Resume</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

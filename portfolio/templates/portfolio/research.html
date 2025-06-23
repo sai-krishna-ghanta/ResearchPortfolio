@@ -1,0 +1,33 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title %}Research - Ghanta Sai Krishna{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-content">
+        <h1 class="section-title">Recent Research</h1>
+        <p style="color: var(--academic-slate); margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.6;">
+            My research focuses on advancing multi-robot systems, computer vision, and AI frameworks for autonomous navigation and cooperative exploration.
+        </p>
+        
+        {% for project in research_projects %}
+        <div class="research-project">
+            <h3>{{ project.title }}</h3>
+            <p class="authors">{{ project.authors }}</p>
+            <p class="venue"><strong>{{ project.venue }}</strong> • {{ project.year }}</p>
+            <p class="description">{{ project.description }}</p>
+            <div class="research-links">
+                <a href="#" data-tooltip="View Paper">📄 Paper</a>
+                <a href="#" data-tooltip="Source Code">💻 Code</a>
+                <a href="#" data-tooltip="arXiv Preprint">🔗 arXiv</a>
+            </div>
+        </div>
+        {% endfor %}
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="{% url 'publications' %}" class="btn btn-primary">View All Publications →</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

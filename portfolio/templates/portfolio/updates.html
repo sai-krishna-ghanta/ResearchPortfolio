@@ -1,0 +1,25 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title %}Updates - Ghanta Sai Krishna{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-content">
+        <h1 class="section-title">Updates Archive</h1>
+        <p style="color: var(--academic-slate); margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.6;">
+            Academic milestones, research achievements, and professional updates.
+        </p>
+        
+        <div class="updates-grid">
+            {% for update in updates %}
+            <div class="update-item">
+                <div class="update-date">{{ update.date }}</div>
+                <div class="update-type {{ update.type|lower }}">{{ update.type }}</div>
+                <div class="update-title">{{ update.title }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

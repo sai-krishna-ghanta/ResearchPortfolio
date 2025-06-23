@@ -1,0 +1,46 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title %}Publications - Ghanta Sai Krishna{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-content">
+        <h1 class="section-title">Publications</h1>
+        
+        <!-- Journals Section -->
+        <div class="publication-section">
+            <h2 class="section-subtitle">Journal Papers</h2>
+            <ul class="publication-list">
+                {% for journal in journals %}
+                <li class="publication-item">
+                    <h4>{{ journal.title }}</h4>
+                    <p class="authors">{{ journal.authors }}</p>
+                    <p class="venue">{{ journal.venue }} ({{ journal.year }})</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        
+        <!-- Conferences Section -->
+        <div class="publication-section">
+            <h2 class="section-subtitle">Conference Papers</h2>
+            <ul class="publication-list">
+                {% for conference in conferences %}
+                <li class="publication-item">
+                    <h4>{{ conference.title }}</h4>
+                    <p class="authors">{{ conference.authors }}</p>
+                    <p class="venue">{{ conference.venue }} ({{ conference.year }})</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://scholar.google.com/citations?user=lrK_Y8AAAAAJ&hl=en" target="_blank" class="btn btn-primary">
+                🎓 View on Google Scholar
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

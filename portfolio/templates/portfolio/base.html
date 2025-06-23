@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Ghanta Sai Krishna - Portfolio{% endblock %}</title>
+    <meta name="description" content="PhD student in Artificial Intelligence at University of Georgia, specializing in multi-robot systems, computer vision, and autonomous navigation.">
+    
+    <!-- Load static files -->
+    {% load static %}
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Ghanta Sai Krishna - AI Research Portfolio">
+    <meta property="og:description" content="PhD student specializing in multi-robot systems, computer vision, and autonomous navigation">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{% static 'images/profile.jpg' %}">
+    
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="{% url 'home' %}" class="logo">Ghanta Sai Krishna</a>
+                
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+                        <li><a href="{% url 'research' %}" class="nav-link">Research</a></li>
+                        <li><a href="{% url 'publications' %}" class="nav-link">Publications</a></li>
+                        <li><a href="{% url 'updates' %}" class="nav-link">Updates</a></li>
+                        <li><a href="{% url 'resume' %}" class="nav-link">Resume</a></li>
+                        <li><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+                    </ul>
+                    
+                    <button class="mobile-menu-btn">☰</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Ghanta Sai Krishna. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://scholar.google.com/citations?user=lrK_Y8AAAAAJ&hl=en" target="_blank" data-tooltip="Google Scholar">🎓</a>
+                    <a href="https://github.com/sai-krishna-ghanta/" target="_blank" data-tooltip="GitHub">💻</a>
+                    <a href="https://www.linkedin.com/in/sai-krishna-ghanta-320ab0211/" target="_blank" data-tooltip="LinkedIn">💼</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{% static 'js/main.js' %}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

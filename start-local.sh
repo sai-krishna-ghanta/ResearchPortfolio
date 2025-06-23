@@ -1,12 +1,12 @@
 #!/bin/bash
 
-echo "Starting Ghanta Sai Krishna Portfolio Website..."
+echo "Starting Ghanta Sai Krishna Django Portfolio Website..."
 echo ""
-echo "Installing dependencies (if needed)..."
-npm install
+echo "Running Django migrations..."
+python manage.py migrate
 echo ""
-echo "Starting development server..."
-echo "Website will be available at: http://localhost:5000"
+echo "Starting Django development server..."
+echo "Website will be available at: http://localhost:8000"
 echo ""
 echo "Press Ctrl+C to stop the server"
-npm run dev
+python manage.py runserver 0.0.0.0:8000

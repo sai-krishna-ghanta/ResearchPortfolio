@@ -1,0 +1,610 @@
+/* Academic Portfolio CSS */
+:root {
+    --academic-blue: #1e40af;
+    --academic-dark: #1e293b;
+    --academic-slate: #64748b;
+    --academic-light: #f8fafc;
+    --academic-border: #e2e8f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--academic-dark);
+    background-color: var(--academic-light);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background: white;
+    border-bottom: 1px solid var(--academic-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--academic-blue);
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--academic-slate);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--academic-blue);
+    background-color: #eff6ff;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--academic-dark);
+    cursor: pointer;
+}
+
+/* Main Content */
+main {
+    padding: 2rem 0;
+    min-height: calc(100vh - 160px);
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--academic-border);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--academic-dark);
+    margin-bottom: 1.5rem;
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--academic-dark);
+    margin-bottom: 1rem;
+}
+
+/* Profile Section */
+.profile-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.profile-info h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--academic-dark);
+    margin-bottom: 0.5rem;
+}
+
+.profile-info .subtitle {
+    font-size: 1.25rem;
+    color: var(--academic-blue);
+    margin-bottom: 1.5rem;
+}
+
+.profile-info p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: var(--academic-slate);
+}
+
+.profile-image {
+    text-align: center;
+}
+
+.profile-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--academic-blue);
+    color: var(--academic-blue);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.btn:hover {
+    background: var(--academic-blue);
+    color: white;
+}
+
+.btn-primary {
+    background: var(--academic-blue);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+/* Research Interests Grid */
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.interest-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.interest-icon {
+    background: #eff6ff;
+    color: var(--academic-blue);
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.interest-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--academic-dark);
+    margin-bottom: 0.25rem;
+}
+
+.interest-content p {
+    color: var(--academic-slate);
+    font-size: 0.95rem;
+}
+
+/* Research Projects */
+.research-project {
+    border: 1px solid var(--academic-border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.research-project:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.research-project h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--academic-dark);
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.research-project .authors {
+    color: var(--academic-blue);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.research-project .venue {
+    color: var(--academic-slate);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.research-project .description {
+    color: var(--academic-slate);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.research-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.research-links a {
+    color: var(--academic-blue);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.research-links a:hover {
+    text-decoration: underline;
+}
+
+/* Publications */
+.publication-section {
+    margin-bottom: 2rem;
+}
+
+.publication-list {
+    list-style: none;
+}
+
+.publication-item {
+    padding: 1rem;
+    border-bottom: 1px solid var(--academic-border);
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.publication-item:hover {
+    background: #f8fafc;
+}
+
+.publication-item h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--academic-dark);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.publication-item .authors {
+    color: var(--academic-blue);
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.publication-item .venue {
+    color: var(--academic-slate);
+    font-size: 0.9rem;
+}
+
+/* Updates Timeline */
+.updates-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.update-item {
+    display: grid;
+    grid-template-columns: 120px auto auto;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--academic-border);
+    border-radius: 8px;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.update-item:hover {
+    background: #f8fafc;
+}
+
+.update-date {
+    font-weight: 600;
+    color: var(--academic-dark);
+    font-size: 0.9rem;
+}
+
+.update-type {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.update-type.publication {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.update-type.education {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.update-type.experience {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.update-type.recognition {
+    background: #fce7f3;
+    color: #be185d;
+}
+
+.update-title {
+    color: var(--academic-slate);
+    font-size: 0.95rem;
+}
+
+/* Resume Sections */
+.resume-section {
+    margin-bottom: 2rem;
+}
+
+.resume-item {
+    border-left: 3px solid var(--academic-blue);
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.resume-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background: var(--academic-blue);
+    border-radius: 50%;
+}
+
+.resume-item h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--academic-dark);
+    margin-bottom: 0.25rem;
+}
+
+.resume-item .institution {
+    color: var(--academic-blue);
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.resume-item .period {
+    color: var(--academic-slate);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.resume-item .description {
+    color: var(--academic-slate);
+    line-height: 1.6;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-category h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--academic-dark);
+    margin-bottom: 0.75rem;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tag {
+    background: #eff6ff;
+    color: var(--academic-blue);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Contact Section */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.contact-item {
+    text-align: center;
+    padding: 1.5rem;
+    border: 1px solid var(--academic-border);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item .icon {
+    font-size: 2rem;
+    color: var(--academic-blue);
+    margin-bottom: 1rem;
+}
+
+.contact-item h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--academic-dark);
+    margin-bottom: 0.5rem;
+}
+
+.contact-item a {
+    color: var(--academic-blue);
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: white;
+    border-top: 1px solid var(--academic-border);
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: var(--academic-slate);
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.footer-links a:hover {
+    color: var(--academic-blue);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        border-top: 1px solid var(--academic-border);
+        flex-direction: column;
+        padding: 1rem;
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .profile-image {
+        order: -1;
+    }
+
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .update-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .btn-group {
+        justify-content: center;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .card-content {
+        padding: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .profile-info h1 {
+        font-size: 2rem;
+    }
+
+    .profile-image img {
+        width: 200px;
+        height: 200px;
+    }
+}
